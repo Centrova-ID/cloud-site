@@ -6,3 +6,4 @@
 - [x] Hapus pseudo-element garis/marker dari eyebrow styling.
 - [x] Rapikan spacing section setelah elemen dekoratif dihapus.
 - [x] Jalankan type check, build, dan verifikasi tampilan desktop/mobile.
+- [x] Hapus semua penyebutan SLA dari seluruh halaman dan dokumentasi tampilan — hasil pencarian tidak menemukan penyebutan SLA.
