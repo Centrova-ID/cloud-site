@@ -28,3 +28,7 @@
 - [x] Tambahkan tombol “Dapatkan sekarang” pada setiap card paket VPS.
 - [x] Buat pesan WhatsApp otomatis sesuai paket yang dipilih dan arahkan ke nomor +62 815-1136-7150.
 - [x] Validasi link WhatsApp dan layout card setelah perubahan.
+- [x] Tambahkan metadata SEO per halaman, canonical domain, Open Graph, Twitter Card, dan structured data.
+- [x] Tambahkan robots.txt dan sitemap.xml untuk cloud.centrova.id.
+- [x] Optimalkan SEO gambar dengan alt text, loading, decoding, dan konteks yang relevan.
+- [x] Validasi metadata, crawler files, build, dan URL publik.
