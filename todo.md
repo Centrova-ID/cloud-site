@@ -22,3 +22,6 @@
 - [x] Validasi homepage desktop/mobile serta build setelah perubahan.
 - [x] Hapus AOS dari elemen card dan pasang hanya pada nomor, ikon, judul, serta deskripsi di dalam card.
 - [x] Validasi card tetap diam saat kontennya dianimasikan dan jalankan build.
+- [x] Besarkan teks nilai ringkasan spesifikasi paket menjadi 16px.
+- [x] Dekatkan jarak harga dan spesifikasi agar ruang kosong card lebih proporsional.
+- [x] Validasi tampilan pricing dan build setelah perubahan.

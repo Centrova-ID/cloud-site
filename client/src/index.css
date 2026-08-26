@@ -81,9 +81,9 @@ p { line-height:1.65; }
 .price-card h3 { font-size:20px; margin-bottom:14px; }
 .price { font:800 38px/1 'Plus Jakarta Sans'; color:var(--ink); letter-spacing:-.06em; }
 .price small { font:600 13px 'Figtree'; color:var(--muted); letter-spacing:0; }
-.specs { margin-top:auto; display:grid; grid-template-columns:1fr 1fr; gap:16px 10px; padding-top:28px; }
-.spec-label { display:block; color:var(--muted); font-size:11px; margin-bottom:4px; }
-.spec-value { color:var(--ink); font-weight:700; font-size:14px; }
+.specs { margin-top:24px; display:grid; grid-template-columns:1fr 1fr; gap:13px 10px; padding-top:0; }
+.spec-label { display:block; color:var(--muted); font-size:11px; margin-bottom:3px; }
+.spec-value { color:var(--ink); font-weight:700; font-size:16px; }
 .section-note { font-size:13px; color:var(--muted); margin-top:18px; }
 .process-grid { display:grid; grid-template-columns:.7fr 1fr; gap:70px; align-items:center; }
 .process-art { width:100%; mix-blend-mode:multiply; }
