@@ -7,3 +7,6 @@
 - [x] Rapikan spacing section setelah elemen dekoratif dihapus.
 - [x] Jalankan type check, build, dan verifikasi tampilan desktop/mobile.
 - [x] Hapus semua penyebutan SLA dari seluruh halaman dan dokumentasi tampilan — hasil pencarian tidak menemukan penyebutan SLA.
+- [x] Pasang dependensi AOS dan inisialisasi pada root aplikasi.
+- [x] Tambahkan atribut animasi AOS pada hero, section, kartu, langkah, FAQ, dan CTA.
+- [x] Pastikan reduced motion tetap dihormati dan jalankan validasi build.

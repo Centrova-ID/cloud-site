@@ -1,4 +1,7 @@
+import { useEffect } from "react";
 import { Route, Switch } from "wouter";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import ErrorBoundary from "./components/ErrorBoundary";
@@ -26,6 +29,18 @@ function Router() {
 }
 
 export default function App() {
+  useEffect(() => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    AOS.init({
+      duration: reduceMotion ? 0 : 650,
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 70,
+      disable: reduceMotion,
+    });
+    return () => AOS.refreshHard();
+  }, []);
+
   return (
     <ErrorBoundary>
       <ThemeProvider defaultTheme="light">
