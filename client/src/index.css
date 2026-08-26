@@ -24,8 +24,7 @@ button, a { -webkit-tap-highlight-color:transparent; }
 .nav-cta:active, .button:active { transform:scale(.97); }
 .menu-trigger { display:none; border:0; background:transparent; color:var(--ink); padding:8px; }
 .mobile-nav { display:none; }
-.eyebrow, .footer-label { margin:0 0 16px; color:var(--blue); font-size:11px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; }
-.eyebrow::before { content:'— '; color:var(--yellow); }
+.footer-label { margin:0 0 16px; color:var(--ink); font-size:11px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; }
 h1,h2,h3 { font-family:'Plus Jakarta Sans',sans-serif; color:var(--ink); letter-spacing:-.055em; margin:0; }
 h1 { font-size:clamp(42px, 6vw, 76px); line-height:1.02; max-width:760px; }
 h2 { font-size:clamp(32px, 4vw, 52px); line-height:1.06; }
@@ -42,8 +41,6 @@ p { line-height:1.65; }
 .hero h1 { margin-bottom:25px; }
 .hero h1 span { color:var(--blue); }
 .hero-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:31px; }
-.hero-note { display:flex; align-items:center; gap:10px; margin-top:28px; color:var(--muted); font-size:13px; }
-.status-dot { width:9px; height:9px; border-radius:50%; background:#40C057; box-shadow:0 0 0 5px #DFF7E3; }
 .hero-art { width:100%; max-height:520px; object-fit:contain; mix-blend-mode:multiply; }
 .section { padding-block:110px; }
 .section-head { display:flex; align-items:end; justify-content:space-between; gap:30px; margin-bottom:45px; }
@@ -68,8 +65,7 @@ p { line-height:1.65; }
 .price-card.popular { background:var(--ink); color:#fff; }
 .price-card.popular h3, .price-card.popular .price, .price-card.popular .spec-value { color:#fff; }
 .price-card.popular .spec-label { color:#AFC2D5; }
-.badge { position:absolute; top:18px; right:18px; background:var(--yellow); color:var(--ink); padding:7px 10px; border-radius:999px; font-size:10px; font-weight:800; text-transform:uppercase; letter-spacing:.08em; }
-.price-card h3 { font-size:20px; margin-bottom:14px; } .spec-chip { display:inline-flex; width:max-content; align-items:center; gap:7px; background:#DFF0FC; color:var(--blue-dark); border-radius:999px; padding:6px 9px; font-size:10px; font-weight:800; letter-spacing:.08em; text-transform:uppercase; margin-bottom:20px; } .spec-chip::before { content:'●'; color:var(--blue); font-size:9px; } .popular .spec-chip { background:rgba(255,199,44,.16); color:var(--yellow); } .popular .spec-chip::before { color:var(--yellow); }
+.price-card h3 { font-size:20px; margin-bottom:14px; }
 .price { font:800 38px/1 'Plus Jakarta Sans'; color:var(--ink); letter-spacing:-.06em; }
 .price small { font:600 13px 'Figtree'; color:var(--muted); letter-spacing:0; }
 .specs { margin-top:auto; display:grid; grid-template-columns:1fr 1fr; gap:16px 10px; padding-top:28px; }
