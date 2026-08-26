@@ -15,3 +15,5 @@
 - [x] Ubah semua menu navbar menjadi warna netral, termasuk state aktif, sementara tombol CTA tetap aksen kuning.
 - [x] Tambahkan transisi smooth untuk panel hamburger menu mobile dan ikon menu.
 - [x] Validasi interaksi mobile dan build setelah perubahan.
+- [x] Pindahkan atribut AOS dari section/container besar ke heading, teks, gambar, kartu, dan item konten.
+- [x] Validasi hasil AOS dan build setelah penyesuaian.
