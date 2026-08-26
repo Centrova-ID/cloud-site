@@ -1,7 +1,7 @@
 /* Signal Blue: shared editorial shell with compact navigation, strong blue CTA, and generous whitespace. */
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, ArrowUpRight, MessageCircle } from "lucide-react";
+import { ArrowUpRight, MessageCircle } from "lucide-react";
 
 const links = [
   ["Beranda", "/"],
@@ -25,9 +25,9 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
             {links.map(([label, href]) => <Link key={href} href={href} className={location === href ? "active" : ""}>{label}</Link>)}
           </nav>
           <Link href="/kontak" className="nav-cta">Tanya tim <ArrowUpRight size={16} /></Link>
-          <button className="menu-trigger" onClick={() => setOpen(!open)} aria-label={open ? "Tutup menu" : "Buka menu"}>{open ? <X /> : <Menu />}</button>
+          <button className={`menu-trigger ${open ? "is-open" : ""}`} onClick={() => setOpen(!open)} aria-label={open ? "Tutup menu" : "Buka menu"} aria-expanded={open}><span /><span /><span /></button>
         </div>
-        {open && <nav className="mobile-nav" aria-label="Navigasi mobile">{links.map(([label, href]) => <Link key={href} href={href} onClick={() => setOpen(false)} className={location === href ? "active" : ""}>{label}</Link>)}<Link href="/kontak" className="mobile-cta" onClick={() => setOpen(false)}>Tanya tim <ArrowUpRight size={16} /></Link></nav>}
+        <nav className={`mobile-nav ${open ? "is-open" : ""}`} aria-label="Navigasi mobile" aria-hidden={!open}>{links.map(([label, href]) => <Link key={href} href={href} onClick={() => setOpen(false)} className={location === href ? "active" : ""}>{label}</Link>)}<Link href="/kontak" className="mobile-cta" onClick={() => setOpen(false)}>Tanya tim <ArrowUpRight size={16} /></Link></nav>
       </header>
       <main>{children}</main>
       <footer className="site-footer">
