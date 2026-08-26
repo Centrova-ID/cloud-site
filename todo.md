@@ -10,3 +10,5 @@
 - [x] Pasang dependensi AOS dan inisialisasi pada root aplikasi.
 - [x] Tambahkan atribut animasi AOS pada hero, section, kartu, langkah, FAQ, dan CTA.
 - [x] Pastikan reduced motion tetap dihormati dan jalankan validasi build.
+- [x] Tambahkan transisi expand/collapse pada FAQ beserta perubahan ikon yang halus.
+- [x] Validasi interaksi FAQ dan build setelah perubahan.
