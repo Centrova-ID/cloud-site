@@ -20,3 +20,5 @@
 - [x] Hapus preview harga dari homepage dan arahkan informasi harga ke halaman Paket VPS.
 - [x] Tambahkan konten manfaat, tanda kebutuhan VPS, dan alasan memilih layanan dengan copywriting profesional yang simpel.
 - [x] Validasi homepage desktop/mobile serta build setelah perubahan.
+- [x] Hapus AOS dari elemen card dan pasang hanya pada nomor, ikon, judul, serta deskripsi di dalam card.
+- [x] Validasi card tetap diam saat kontennya dianimasikan dan jalankan build.
