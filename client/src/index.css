@@ -18,7 +18,7 @@ button, a { -webkit-tap-highlight-color:transparent; }
 .brand em { color:var(--blue); font-style:normal; font-weight:700; font-size:13px; letter-spacing:.06em; margin-left:3px; }
 .desktop-nav { display:flex; gap:28px; align-items:center; margin-left:auto; }
 .desktop-nav a, .mobile-nav a { color:var(--muted); font-size:14px; font-weight:600; transition:color .18s ease; }
-.desktop-nav a:hover, .desktop-nav a.active, .mobile-nav a.active { color:var(--blue); }
+.desktop-nav a:hover, .desktop-nav a.active, .mobile-nav a:hover, .mobile-nav a.active { color:var(--ink); }
 .nav-cta, .mobile-cta { display:inline-flex; align-items:center; justify-content:center; gap:8px; background:var(--yellow); color:var(--ink); font-weight:700; font-size:14px; border-radius:999px; padding:12px 17px; transition:transform .16s ease, background .18s ease; }
 .nav-cta:hover, .mobile-cta:hover { background:#F0B800; transform:translateY(-2px); }
 .nav-cta:active, .button:active { transform:scale(.97); }

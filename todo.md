@@ -12,3 +12,4 @@
 - [x] Pastikan reduced motion tetap dihormati dan jalankan validasi build.
 - [x] Tambahkan transisi expand/collapse pada FAQ beserta perubahan ikon yang halus.
 - [x] Validasi interaksi FAQ dan build setelah perubahan.
+- [x] Ubah semua menu navbar menjadi warna netral, termasuk state aktif, sementara tombol CTA tetap aksen kuning.
