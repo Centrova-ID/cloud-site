@@ -32,3 +32,5 @@
 - [x] Tambahkan robots.txt dan sitemap.xml untuk cloud.centrova.id.
 - [x] Optimalkan SEO gambar dengan alt text, loading, decoding, dan konteks yang relevan.
 - [x] Validasi metadata, crawler files, build, dan URL publik.
+- [x] Tambahkan vercel.json untuk build Vite dan fallback routing SPA.
+- [x] Validasi JSON dan production build setelah konfigurasi ditambahkan.
