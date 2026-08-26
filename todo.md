@@ -17,3 +17,6 @@
 - [x] Validasi interaksi mobile dan build setelah perubahan.
 - [x] Pindahkan atribut AOS dari section/container besar ke heading, teks, gambar, kartu, dan item konten.
 - [x] Validasi hasil AOS dan build setelah penyesuaian.
+- [x] Hapus preview harga dari homepage dan arahkan informasi harga ke halaman Paket VPS.
+- [x] Tambahkan konten manfaat, tanda kebutuhan VPS, dan alasan memilih layanan dengan copywriting profesional yang simpel.
+- [x] Validasi homepage desktop/mobile serta build setelah perubahan.
