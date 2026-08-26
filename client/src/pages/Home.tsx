@@ -1,25 +1,24 @@
-import { Button } from "@/components/ui/button";
-import { Loader2 } from "lucide-react";
-import { Streamdown } from 'streamdown';
+/* Signal Blue: asymmetric homepage that turns infrastructure details into a calm, readable buying path. */
+import { Link } from "wouter";
+import { ArrowRight, MapPin, Zap, Headphones, ReceiptText, Check } from "lucide-react";
 
-/**
- * All content in this page are only for example, replace with your own feature implementation
- * When building pages, remember your instructions in Frontend Best Practices, Design Guide and Common Pitfalls
- */
-export default function Home() {
-  // If theme is switchable in App.tsx, we can implement theme toggling like this:
-  // const { theme, toggleTheme } = useTheme();
+const plans = [
+  ["VPS 1", "1 Core", "1 GB", "10 GB", "8 user", "Rp50.000"],
+  ["VPS 2", "1 Core", "2 GB", "20 GB", "4 user", "Rp100.000"],
+  ["VPS 3", "2 Core", "3 GB", "25 GB", "4 user", "Rp180.000"],
+  ["VPS 4", "2 Core", "4 GB", "30 GB", "3 user", "Rp250.000"],
+  ["VPS 5", "3 Core", "5 GB", "35 GB", "3 user", "Rp450.000"],
+  ["VPS 6", "3 Core", "6 GB", "40 GB", "2 user", "Rp700.000"],
+];
+const benefits = [[MapPin,"Server di Indonesia","Akses lebih dekat berarti latensi lebih rendah untuk pengunjungmu."],[Zap,"Setup tanpa menunggu","Kami siapkan resource VPS-mu dengan proses yang ringkas."],[Headphones,"Ada tim di ujung chat","Tanya langsung ke orang yang paham, bukan ticket system rumit."],[ReceiptText,"Harga yang terbuka","Lihat biaya dari awal. Tanpa biaya tersembunyi di belakang." ]] as const;
+const faqs = [["Apa itu VPS?","VPS adalah ruang server khusus yang bisa kamu pakai untuk menjalankan website dengan resource yang lebih terjamin. Anggap saja seperti punya satu ruang sendiri di dalam gedung server."],["Apa bedanya VPS dengan hosting biasa?","Hosting biasa berbagi resource dengan banyak website. VPS memberi resource yang lebih terukur ketika website atau aplikasi kamu mulai membutuhkan ruang ekstra."],["Berapa lama proses aktivasi?","Setelah detail kebutuhan dan pembayaran dikonfirmasi, tim kami akan mengabari proses setup dan status VPS-mu secara langsung."],["Apakah ada biaya tambahan?","Harga pada halaman paket adalah biaya bulanan addon. Jika ada kebutuhan khusus di luar paket, kami akan menjelaskannya terlebih dahulu."],["Bagaimana cara upgrade paket?","Cukup hubungi tim kami. Kami bantu mengecek kebutuhan resource dan mengatur perpindahan ke paket yang lebih sesuai."]];
 
-  return (
-    <div className="min-h-screen flex flex-col">
-      <main>
-        {/* Example: lucide-react for icons */}
-        <Loader2 className="animate-spin" />
-        Example Page
-        {/* Example: Streamdown for markdown rendering */}
-        <Streamdown>Any **markdown** content</Streamdown>
-        <Button variant="default">Example Button</Button>
-      </main>
-    </div>
-  );
-}
+export default function Home() { return <>
+  <section className="hero"><div className="container hero-grid"><div className="fade-up"><p className="eyebrow">ADD-ON VPS / ID REGION</p><h1>Tambah ruang.<br/><span>Jaga website</span><br/>tetap lancar.</h1><p className="lead">VPS tambahan untuk pelanggan layanan web yang butuh resource lebih lega, stabil, dan mudah diatur.</p><div className="hero-actions"><Link href="/paket" className="button button-primary">Cek paket yang pas <ArrowRight size={18}/></Link><Link href="/kontak" className="button button-light">Tanya tim kami</Link></div><div className="hero-note"><i className="status-dot"/> Aktivasi dibantu langsung oleh tim kami</div></div><img className="hero-art fade-up" style={{animationDelay:"120ms"}} src="/manus-storage/vps-addon-hero_7aa17125.png" alt="Ilustrasi server VPS dan awan"/></div></section>
+  <section className="section"><div className="container"><div className="section-head"><div><p className="eyebrow">KENAPA VPS ADDON</p><h2>Yang penting,<br/>sudah kami sederhanakan.</h2></div><p>Resource server tambahan tidak harus terasa rumit. Kami fokus pada hal yang paling kamu butuhkan untuk menjalankan website dengan tenang.</p></div><div className="kicker-grid">{benefits.map(([Icon,title,copy])=><article className="kicker" key={title}><div className="kicker-icon"><Icon size={23}/></div><h3>{title}</h3><p>{copy}</p></article>)}</div></div></section>
+  <section className="blue-band section"><div className="container band-grid"><div><p className="eyebrow">SATU ADDON, LEBIH BANYAK RUANG</p><h2>Mulai kecil, tambah saat website kamu siap tumbuh.</h2><p>Enam pilihan kapasitas, dari website sederhana sampai aplikasi yang mulai ramai. Kamu tinggal pilih sesuai kebutuhan hari ini.</p></div><div className="band-stat"><strong>6</strong><span>paket VPS dengan harga transparan<br/>mulai dari Rp50.000 / bulan</span></div></div></section>
+  <section className="section pricing-section"><div className="container"><div className="section-head"><div><p className="eyebrow">PILIH KAPASITAS</p><h2>Paket yang gampang dibandingkan.</h2></div><Link href="/paket" className="button button-light">Lihat semua paket <ArrowRight size={17}/></Link></div><div className="price-grid">{plans.slice(0,3).map((p,i)=><article className="price-card" key={p[0]}><h3>{p[0]}</h3><span className="spec-chip">ID region · aktif</span><div className="price">{p[5]} <small>/ bulan</small></div><div className="specs"><div><span className="spec-label">vCPU</span><span className="spec-value">{p[1]}</span></div><div><span className="spec-label">RAM</span><span className="spec-value">{p[2]}</span></div><div><span className="spec-label">Storage</span><span className="spec-value">{p[3]}</span></div><div><span className="spec-label">Maksimal</span><span className="spec-value">{p[4]}</span></div></div></article>)}</div><p className="section-note">Harga di atas adalah layanan tambahan (addon) untuk pelanggan layanan web kami.</p></div></section>
+  <section className="section"><div className="container process-grid"><div><p className="eyebrow">CARA ORDER</p><h2>Empat langkah,<br/>langsung jalan.</h2><p className="lead">Tidak perlu mengisi konfigurasi panjang. Ceritakan kebutuhanmu, biar tim kami bantu arahkan.</p><img className="process-art" src="/manus-storage/vps-addon-process_426478d9.png" alt="Ilustrasi empat langkah order VPS"/></div><div className="steps">{[["01","Pilih paket sesuai kebutuhan","Lihat kapasitas, lalu pilih yang paling mendekati kebutuhan website-mu."],["02","Hubungi tim kami","Kirim pesan lewat WhatsApp atau email. Kami bantu cek detailnya."],["03","Kami proses setup","Resource server disiapkan dan detail akses dikonfirmasi oleh tim."],["04","VPS siap dipakai","Website-mu punya ruang tambahan untuk bekerja lebih stabil."]].map(([n,t,d])=><div className="step" key={n}><span className="step-num">{n}</span><div><h3>{t}</h3><p>{d}</p></div></div>)}</div></div></section>
+  <section className="section" style={{background:"var(--paper)"}}><div className="container"><div className="section-head"><div><p className="eyebrow">FAQ</p><h2>Pertanyaan yang<br/>sering muncul.</h2></div><p>Masih belum yakin? Tim kami siap membantu menjelaskan pilihan yang paling masuk akal untuk website kamu.</p></div><div className="faq-list">{faqs.map(([q,a])=><details className="faq-item" key={q}><summary>{q}</summary><p>{a}</p></details>)}</div></div></section>
+  <section className="blue-band section"><div className="container" style={{display:"flex",justifyContent:"space-between",alignItems:"center",gap:30,flexWrap:"wrap"}}><div><p className="eyebrow">SIAP TAMBAH RESOURCE?</p><h2>Mulai dari kebutuhanmu.</h2></div><Link href="/kontak" className="button" style={{background:"var(--yellow)",color:"var(--ink)"}}>Hubungi tim sekarang <ArrowRight size={18}/></Link></div></section>
+</> }
